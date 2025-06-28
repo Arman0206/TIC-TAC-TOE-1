@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Ultimate Edition</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Tic Tac Toe</h1>
+            <p class="game-subtitle">The ultimate showdown</p>
+        </header>
+        
+        <main class="game-main">
+            <button id="startbtn" class="glow-button">
+                <span>Start Game</span>
+                <div class="glow"></div>
+            </button>
+            
+            <div class="game-content">
+                <div class="game-info">
+                    <h2>Player <span class="current-player">X</span>'s Turn</h2>
+                    <div class="status"></div>
+                </div>
+                
+                <div class="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+                
+                <div class="game-controls">
+                    <button id="resetButton" class="action-button">
+                        <span>Reset Game</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+        
+        <audio src="click.mp3" id="clickSound"></audio>
+        <audio src="win.mp3" id="winSound"></audio>
+        <audio src="click.mp3" id="tieSound"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
